@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css?family=Gloria+Hallelujah");
+@import url("https://fonts.googleapis.com/css?family=Mogra");
+.title {
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Mogra', cursive;
+  color: black;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  font-size: 50px; }
+
+.quote-container {
+  margin: 25px auto;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  font-family: "Gloria Hallelujah", cursive;
+  width: 50%;
+  height: auto;
+  text-align: center;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  font-size: 25px;
+  color: black; }
+  @media (max-width: 768px) {
+    .quote-container {
+      width: 95%; } }
+  .quote-container #text {
+    color: white; }
+  .quote-container .quote-author {
+    color: white; }
+  .quote-container #new-quote {
+    margin-top: 50px;
+    outline: none;
+    font-size: 25px;
+    background: white; }
