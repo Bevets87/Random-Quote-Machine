@@ -1,4 +1,5 @@
-# [Random Quote Machine](https://bevets87.github.io/Random-Quote-Machine/)
+# Random Quote Machine
+[https://bevets87.github.io/Random-Quote-Machine/](https://bevets87.github.io/Random-Quote-Machine/)
 
 ### User Stories:
 
