@@ -1,3 +1,7 @@
 # Random Quote Machine
 
-### A random quote generator built in vanilla js following an MVC pattern.
+### User Stories:
+
+1. I can click a button to show me a new random quote.
+
+2. I can press a button to tweet out a quote.
