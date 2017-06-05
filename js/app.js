@@ -3,8 +3,8 @@
   'use strict'
 
   function App () {
-    this.view = new window.app.View()
-    this.controller = new window.app.Controller(this.view, $)
+    this.view = new app.View()
+    this.controller = new app.Controller(this.view, $)
   }
 
   var RandomQuoteMachine = new App()

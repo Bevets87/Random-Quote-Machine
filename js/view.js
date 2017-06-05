@@ -1,4 +1,4 @@
-(function(window){
+(function (window) {
 
   'use strict'
 
@@ -14,6 +14,7 @@
   function View () {
     this.$body = document.getElementsByTagName('body');
     this.$quoteButton = document.getElementById('new-quote');
+    this.$tweetButton = document.getElementById('new-tweet');
     this.$quoteText = document.getElementById('text');
     this.$quoteAuthor = document.getElementById('author');
 }
@@ -23,7 +24,14 @@
     var self = this;
     if (event == 'newQuote') {
       self.$quoteButton.addEventListener('click', function (event) {
-          handler()
+        event.preventDefault()
+        handler()
+      })
+    }
+    if (event == 'newTweet') {
+      self.$tweetButton.addEventListener('click', function (event) {
+        event.preventDefault()
+        handler()
       })
     }
   }
@@ -39,6 +47,10 @@
         self.$body[0].style.background = getRandomColor();
         self.$quoteText.innerHTML = quote.text;
         self.$quoteAuthor.innerText = quote.author;
+      },
+      tweetQuote: function () {
+        var tweet = encodeURI('"' + self.$quoteText.firstChild.innerText + '"' + self.$quoteAuthor.innerText);
+        window.open('http://twitter.com/intent/tweet?text=' + tweet, '_blank')
       }
     }
     viewCommands[cmd]();
